@@ -1,0 +1,19 @@
+
+create table category
+
+(
+
+ID int unsigned auto_increment primary key,
+
+FN varchar(100),
+
+LN varchar(100),
+
+University varchar(100),
+
+Gender varchar(100),
+
+Country varchar(100)
+
+);
+
