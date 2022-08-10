@@ -1,0 +1,46 @@
+
+create database GlobalToyz;
+
+
+
+create table Toys
+(
+	cToyId		char(6)primary key,
+	vToyName	varchar(20) not null,
+	vToyDescription	varchar(250),
+	cCategoryId	char(3),
+	mToyRate	float not null,
+	cBrandId	char(3),
+	siToyQoh	smallint not null,
+	siLowerAge	smallint not null,
+	siUpperAge	smallint not null,
+	siToyWeight	smallint
+	
+);
+
+
+
+/* data for toys  */
+insert into toys 
+values('000001','Robby the Whale ','A giant Blue Whale with two heavy-duty handles that allow a child to ride on its back. ','001', 8.99 ,'001',50,3,9,1);
+
+insert into toys 
+values('000002','Water Channel System ','Children enjoy playing with water.  The Water Channel System consists of 22 interchangeable pieces including a dock with moveable crane and a water wheel, which creates a current in the water and four boats','001', 33.99,'001',60,5,9,2);
+
+insert into toys 
+values('000003','Parachute and Rocket ','Step on the launch pad and the rocket is launched which sends a parachute slowly down to earth. ','001', 6.99,'003',90,7,9,1);
+
+insert into toys 
+values('000004','Super Deluge','Create artificial rainfall in your garden with this super deluge.','001', 35.99,'005',74,8,9,1);
+
+insert into toys 
+values('000005','Light Show Lamp','Build a revolving, glowing mood lamp with a set of colorful scenes. ','002', 15.99,'001',58,7,9,1);
+
+insert into toys 
+values('000006','Glass Decoration','Make your own beautiful, art work. Set includes eight paints, one paintbrush, patterns and complete instructions.','002', 12.99,'004',99,8,9,2);
+
+insert into toys 
+values('000007','Tie Dye Kit','CHECK THE ORIGINAL TOY LIST','002', 19.99,'002',76,7,9,1);
+
+insert into toys 
+values('000008','Alice in Wonderland','A huge coloring book.  ','002', 14.99,'001',82,4,8,1);

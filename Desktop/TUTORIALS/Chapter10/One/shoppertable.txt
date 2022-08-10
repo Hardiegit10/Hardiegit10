@@ -1,0 +1,32 @@
+use globaltoyz;
+create table Shopper
+(
+	cShopperId 	char(6) primary key,
+	cPassword 	char(10) not null,
+	vFirstName 	varchar(20) not null,
+	vLastName 	varchar(20) not null,
+	vEmailId	varchar(40) not null,
+	vAddress 	varchar(40) not null,
+	cCity 		char(15) not null,
+	cState 		char(15) not null,
+	cCountryId 	char(3),
+	cZipCode	char(10), 
+	cPhone 		char(15) not null ,
+	cCreditCardNo 	char(16) not null,
+	vCreditCardType 	varchar(15)not null,
+	dExpiryDate 	datetime 
+)engine=innodb;
+
+
+use globaltoyz;
+/* data into shopper  */
+insert into shopper values('000001','angels','Angela','Smith','angelas@qmail.com','16223 Radiance Court','Woodbridge','Virginia','001','22191','227-2344','6947343412896785','Master Card','2001-09-08');
+insert into shopper values('000002','guide','Barbara','Johnson','barbaraj@speedmail.com','227 Beach Ave.','Sunnyvale','California','001','94087-1147','123-5673','5345146765854356','Master Card','2001-04-10');
+insert into shopper values('000003','youbet','Betty','Williams','bettyw@dpeedmil.cm','1 Tread Road','Virginia Beach','Varginia','001','23455','458-3299','4747343412896785','Visa Card','2001-12-12');
+insert into shopper values('000004','credit','Carol','Jones','carolj@qmail.com','765 - Furling Road Apt 112  ','Boone','North Carolina','001','28607','678-4544','6344676854335436','Visa Card','2001-10-12');
+insert into shopper values('000005','prepare','Catherine','Roberts','catheriner@qmail.com','5508 Aquiline Court','San Jose','California','001','95123','445-2256','3756784562869963','Master Card','2001-09-10');
+insert into shopper values('000006','Char','Charles','Brown','charlesb@speedmail.com','7822 S. Glitzy Avenue ','Maitland','Florida','001','32751','225-6678','3454678545443344','Visa Card','2001-03-05');
+insert into shopper values('000007','chris','Christopher','Davis','Christopherd@qmail.com','4896 11th ST  ','Hill Avenue','Utah','001','84056-5410','556-9087','7899887675443322','Visa Card','2001-10-02');
+insert into shopper values('000008','mills','Cynthia','Miller','cynthiam@qmailcom','98066 Weary Storm Street','Moon Park ','California','001','93021-2930','422-5688','2345566576879900','Master Card','2001-08-09');
+insert into shopper values('000009','gotcha','Daniel','Wilson','danielw@speedmail.com','4642 Peripheral Drive  ','Brecksville','Ohio','001','44141','454-2246','2345467890986745','Visa Card','2001-11-02');
+insert into shopper values('000010','bingo','David','Moore','davidm@qmail.com','8808 Joviality Drive   ','San Ramon','California','001','94583','982-5577','2343556678799674','Visa Card','2001-12-11');
